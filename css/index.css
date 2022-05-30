@@ -35,7 +35,6 @@ a {
   text-decoration: none;
   font-family: var(--font-principal);
   color: var(--text-color);
-  background-color: #231f20;
 }
 ul {
   list-style-type: none;
@@ -73,6 +72,25 @@ main {
   max-width: 1200px;
   padding-top: var(--spacing-medium);
 }
+video {
+  width: 100%;
+  position: absolute;
+}
+.video h1 {
+  position: relative;
+  color: var(--text-color);
+  font-size: var(--text-large);
+  font-family: var(--font-title);
+  padding: var(--spacing-medium);
+}
+.video h2 {
+  position: relative;
+  color: var(--text-color);
+  font-size: var(--text-medium);
+  font-family: var(--font-title);
+  padding: var(--spacing-small);
+}
+
 .cards {
   display: flex;
   flex-direction: row;
@@ -165,6 +183,7 @@ main {
 .gallery__img:nth-last-of-type(1) {
   grid-column: 1 / 9;
 }
+
 div.footer-container {
   background-color: var(--primary);
   padding-bottom: var(--spacing-small);
@@ -186,6 +205,7 @@ div.footer-container {
   padding: var(--spacing-medium);
   background-color: var(--primary);
   margin-top: 0;
+  margin-bottom: var(--spacing-medium);
 }
 .trago__box {
   display: flex;
@@ -212,6 +232,42 @@ div.footer-container {
   color: var(--text-color);
   font-size: var(--text-base);
   background-color: var(--primary);
+}
+button {
+  padding: 0.8em 1.8em;
+  border: 2px solid #17c3b2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #17c3b2;
+}
+
+button::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #17c3b2;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+button:hover::before {
+  width: 105%;
+}
+
+button:hover {
+  color: #111;
 }
 
 @media screen and (max-width: 879px) {
