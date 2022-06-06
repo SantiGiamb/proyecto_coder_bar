@@ -7,10 +7,8 @@
   --spacing-medium: 3rem;
   --spacing-small: 2.4rem;
   --spacing-xsmall: 2rem;
-  --font-principal: @import
-    url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap");
-  --font-title: @import
-    url("https://fonts.googleapis.com/css2?family=Belgrano&display=swap");
+  --font-principal: "Libre Baskerville", serif;
+  --font-title: "Belgrano", serif;
   --text-large: 5.2em;
   --text-medium: 2.4em;
   --text-base: 1.6em;
@@ -35,14 +33,12 @@ a {
   text-decoration: none;
   font-family: var(--font-principal);
   color: var(--text-color);
+  font-family: var(--font-principal);
+  font-weight: 400;
 }
-/* ul {
+ul {
   list-style-type: none;
   background-color: #231f20;
-} */
-.navv {
-  background-color: #231f20;
-  font-size: var(--spacing-xsmall);
 }
 img {
   width: 100%;
@@ -62,69 +58,78 @@ header picture {
 }
 header picture img {
   max-width: 150px;
+  cursor: pointer;
 }
 nav ul {
   flex-basis: 40%;
   display: flex;
   gap: var(--spacing-small);
 }
-nav ul a {
+nav ul li a {
   font-size: var(--text-base);
+  transition: all 0.3s ease 0s;
+}
+nav ul li a:hover {
+  color: var(--seconday);
+}
+.lead {
+  text-align: center;
+  color: #ffffff;
+  font-size: var(--text-medium);
+}
+
+.h2 {
+  text-align: center;
+  color: var(--text-color);
+  font-size: var(--text-large);
+  margin-bottom: var(--spacing-small);
+}
+.row {
+  margin: var(--spacing-large);
+}
+.col {
+  margin: var(--spacing-xsmall);
 }
 main {
   margin: 0 auto;
   max-width: 1200px;
   padding-top: var(--spacing-medium);
 }
-.all {
-  background-color: #037971;
-}
-.cards {
-  background-color: var(--primary);
-  justify-content: space-between;
-}
-/* video {
-  width: 100%;
-  position: absolute;
-}
-.video h1 {
-  position: relative;
-  color: var(--text-color);
+h1 {
   font-size: var(--text-large);
   font-family: var(--font-title);
-  padding: var(--spacing-medium);
-}
-.video h2 {
-  position: relative;
   color: var(--text-color);
+}
+h2 {
   font-size: var(--text-medium);
-  font-family: var(--font-title);
-  padding: var(--spacing-small);
-} */
-.container {
-  margin-top: 8%;
+  color: var(--text-color);
+  font-family: var;
 }
-.inner {
-  overflow: hidden;
+video {
+  width: 100%;
+  height: 100%;
+  margin-bottom: var(--spacing-small);
 }
-.inner img {
-  transition: all 1.5s;
+.video__title {
+  width: 100%;
+  height: 100%;
+  top: 200px;
+  position: absolute;
+  margin-left: var(--spacing-medium);
 }
-.inner:hover img {
-  transform: scale(1.5);
+.video__title h2 {
+  margin-top: var(--spacing-small);
+  margin-left: var(--spacing-small);
 }
 
-.ratio {
-  position: relative;
-}
-/* .cards {
+.cards {
   display: flex;
   flex-direction: row;
   gap: 1rem;
   justify-content: center;
   padding: var(--spacing-medium);
-} */
-/* .box__info {
+}
+.box__info {
   padding: var(--spacing-medium);
   display: flex;
   flex-direction: column;
@@ -141,14 +146,21 @@ main {
   color: var(--text-color);
   font-size: var(--text-base);
   background-color: var(--primary);
-} */
+}
+.box__img {
+  overflow: hidden;
+}
+.box__img img {
+  transition: all 1.3s ease;
+}
+.box__img:hover img {
+  transform: scale(1.1);
+}
 /* INFO */
 .info {
   display: flex;
   padding: var(--spacing-large);
   align-items: center;
-  background-color: #037971;
-  margin: 0;
 }
 .info__img {
   flex: 1 1 50%;
@@ -214,11 +226,15 @@ main {
 
 div.footer-container {
   background-color: var(--primary);
-  padding-bottom: var(--spacing-small);
+  padding: 0%;
   width: 100%;
   color: #037971;
   display: flex;
   justify-content: space-around;
+}
+.footer-container h3 h4 {
+  margin-bottom: var(--spacing-xsmall);
+  margin-top: var(--spacing-xsmall);
 }
 .footer-column a {
   text-decoration: none;
@@ -261,6 +277,10 @@ div.footer-container {
   font-size: var(--text-base);
   background-color: var(--primary);
 }
+.booton_book {
+  display: flex;
+  align-items: flex-end;
+}
 button {
   padding: 0.8em 1.8em;
   border: 2px solid #17c3b2;
@@ -274,6 +294,7 @@ button {
   z-index: 1;
   font-family: inherit;
   color: #17c3b2;
+  margin-bottom: var(--spacing-xsmall);
 }
 
 button::before {
