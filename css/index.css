@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --primary: #231f20;
   --seconday: #037971;
   --text-color: #ffffff;
@@ -14,8 +14,8 @@
   --text-base: 1.6em;
   --text-small: 1.4em;
   --text-sub: 2em;
-}
-* {
+} */
+/* * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
@@ -42,9 +42,9 @@ ul {
 }
 img {
   width: 100%;
-}
+} */
 /* NAV */
-header {
+/* header {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -71,8 +71,8 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: var(--seconday);
-}
-.lead {
+} */
+/* .lead {
   text-align: center;
   color: #ffffff;
   font-size: var(--text-medium);
@@ -89,8 +89,8 @@ nav ul li a:hover {
 }
 .col {
   margin: var(--spacing-xsmall);
-}
-main {
+} */
+/* main {
   margin: 0 auto;
   max-width: 1200px;
   padding-top: var(--spacing-medium);
@@ -104,8 +104,8 @@ h2 {
   font-size: var(--text-medium);
   color: var(--text-color);
   font-family: var;
-}
-video {
+} */
+/* video {
   width: 100%;
   height: 100%;
   margin-bottom: var(--spacing-small);
@@ -120,9 +120,9 @@ video {
 .video__title h2 {
   margin-top: var(--spacing-small);
   margin-left: var(--spacing-small);
-}
+} */
 
-.cards {
+/* .cards {
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -155,9 +155,9 @@ video {
 }
 .box__img:hover img {
   transform: scale(1.1);
-}
+} */
 /* INFO */
-.info {
+/* .info {
   display: flex;
   padding: var(--spacing-large);
   align-items: center;
@@ -188,9 +188,9 @@ video {
   font-size: var(--text-small);
   background-color: var(--seconday);
   color: var(--primary);
-}
+} */
 /* GALLERY */
-.gallery {
+/* .gallery {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -222,9 +222,9 @@ video {
 
 .gallery__img:nth-last-of-type(1) {
   grid-column: 1 / 9;
-}
-
-div.footer-container {
+} */
+/* footer */
+/* div.footer-container {
   background-color: var(--primary);
   padding: 0%;
   width: 100%;
@@ -241,9 +241,9 @@ div.footer-container {
   color: var(--text-color);
   display: flex;
   background-color: var(--primary);
-}
+} */
 
-.tragos {
+/* .tragos {
   gap: 1rem;
   justify-content: center;
   padding: var(--spacing-medium);
@@ -276,12 +276,9 @@ div.footer-container {
   color: var(--text-color);
   font-size: var(--text-base);
   background-color: var(--primary);
-}
-.booton_book {
-  display: flex;
-  align-items: flex-end;
-}
-button {
+} */
+
+/* button {
   padding: 0.8em 1.8em;
   border: 2px solid #17c3b2;
   position: relative;
@@ -317,9 +314,9 @@ button:hover::before {
 
 button:hover {
   color: #111;
-}
+} */
 
-@media screen and (max-width: 879px) {
+/* @media screen and (max-width: 879px) {
   .info {
     flex-direction: column;
     padding: var(--spacing-small);
@@ -394,4 +391,4 @@ button:hover {
     font-size: var(--text-base);
     background-color: var(--primary);
   }
-}
+} */

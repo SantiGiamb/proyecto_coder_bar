@@ -1,0 +1,53 @@
+.tragos {
+    gap: 1rem;
+    justify-content: center;
+    padding: $spacing-medium;
+    background-color: $primary;
+    margin-top: 0;
+    margin-bottom: $spacing-medium;
+  
+    &__box {
+        display: flex;
+        flex-direction: row;
+    }
+    &__box-1 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    &__info {
+        padding: $spacing-medium;
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-xsmall;
+        background-color: $primary;
+    }
+    &__title {
+        font-family: $font-title;
+        color: $text-alternative;
+        font-size: $text-sub;
+        background-color: inherit;
+    }
+    &__text {
+        color: $text-color;
+        font-size: $text-base;
+        background-color: $primary;
+    }
+}
+.lead {
+    text-align: center;
+    color: #ffffff;
+    font-size: $text-medium;
+  }
+  
+.h2 {
+    text-align: center;
+    color: $text-color;
+    font-size: $text-large;
+    margin-bottom: $spacing-small;
+  }
+.row {
+    margin: $spacing-large;
+  }
+.col {
+    margin: $spacing-xsmall;
+  }
