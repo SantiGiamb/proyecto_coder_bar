@@ -9,13 +9,13 @@
   
   body {
     font-family: $font-principal;
-    background-color: $secondary;
+    background-color: map-get($colors, secondary);
   }
   
   a {
     text-decoration: none;
     font-family: $font-principal;
-    color: $text-color;
+    color: map-get($colors, text-color);
     font-family: $font-principal;
     font-weight: 400;
   }
@@ -34,10 +34,10 @@
   h1 {
     font-size: $text-large;
     font-family: $font-title;
-    color: $text-color;
+    color: map-get($colors, text-color);
   }
   h2 {
     font-size: $text-medium;
-    color: $text-color;
+    color: map-get($colors, text-color);
     
   }

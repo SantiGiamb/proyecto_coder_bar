@@ -1,5 +1,5 @@
 .footer-container {
-    background-color: $primary;
+    background-color: map-get($colors, primary);
     padding: 0%;
     width: 100%;
     color: #037971;
@@ -17,9 +17,9 @@
       }
       &-column a {
         text-decoration: none;
-        color: $text-color;
+        color: map-get($colors, text-color);
         display: flex;
-        background-color: $primary;
+        background-color: map-get($colors, primary);
       }
 }
   

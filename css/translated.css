@@ -1,4 +1,5 @@
 /*MISC*/
+/*colores*/
 @import url("https://fonts.googleapis.com/css2?family=Belgrano&family=Libre+Baskerville&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Belgrano&family=Libre+Baskerville&display=swap");
 * {
@@ -16,7 +17,7 @@ body {
 a {
   text-decoration: none;
   font-family: "Libre Baskerville", serif;
-  color: #ffffff;
+  color: #FFFFFF;
   font-family: "Libre Baskerville", serif;
   font-weight: 400; }
 
@@ -35,11 +36,11 @@ main {
 h1 {
   font-size: 5.2em;
   font-family: "Belgrano", serif;
-  color: #ffffff; }
+  color: #FFFFFF; }
 
 h2 {
   font-size: 2.4em;
-  color: #ffffff; }
+  color: #FFFFFF; }
 
 button {
   padding: 0.8em 1.8em;
@@ -87,7 +88,8 @@ button:hover {
     flex-direction: column; }
   .gallery {
     display: grid;
-    grid-template-rows: repeat(4, auto);
+    /*en todo caso sacar el espacio entre repeat y "("*/
+    grid-template-rows: repeat 4, auto;
     gap: 2rem; }
   .gallery__img:nth-last-of-type(6) {
     grid-column: 1 /7; }
@@ -108,7 +110,7 @@ button:hover {
     gap: 1rem;
     justify-content: center;
     padding: 3rem;
-    background-color: #231f20;
+    background-color: #231F20;
     margin-top: 0; }
   .trago__box {
     display: flex;
@@ -121,20 +123,20 @@ button:hover {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background-color: #231f20; }
+    background-color: #231F20; }
   .trago__title {
     font-family: "Belgrano", serif;
-    color: #e41a1a;
+    color: #E41A1A;
     font-size: 2em;
     background-color: inherit; }
   .trago__text {
-    color: #ffffff;
+    color: #FFFFFF;
     font-size: 1.6em;
-    background-color: #231f20; } }
+    background-color: #231F20; } }
 
 /*PARTIALS*/
 .footer-container {
-  background-color: #231f20;
+  background-color: #231F20;
   padding: 0%;
   width: 100%;
   color: #037971;
@@ -148,19 +150,19 @@ button:hover {
     margin-top: 2rem; }
   .footer-container-column a {
     text-decoration: none;
-    color: #ffffff;
+    color: #FFFFFF;
     display: flex;
-    background-color: #231f20; }
+    background-color: #231F20; }
 
 header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #231f20;
+  background-color: #231F20;
   padding: 2rem 0; }
   header picture {
     flex-basis: 40%;
-    background-color: #231f20;
+    background-color: #231F20;
     margin: 0; }
   header img {
     max-width: 150px;
@@ -173,15 +175,16 @@ nav ul {
   nav ul li a {
     font-size: 1.6em;
     transition: all 0.3s ease 0s; }
-  nav ul nav ul li a:hover {
-    color: #037971; }
+
+nav ul li a:hover {
+  color: #037971; }
 
 /*VIEWS*/
 .tragos {
   gap: 1rem;
   justify-content: center;
   padding: 3rem;
-  background-color: #231f20;
+  background-color: #231F20;
   margin-top: 0;
   margin-bottom: 3rem; }
   .tragos__box {
@@ -195,16 +198,16 @@ nav ul {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background-color: #231f20; }
+    background-color: #231F20; }
   .tragos__title {
     font-family: "Belgrano", serif;
-    color: #e41a1a;
+    color: #E41A1A;
     font-size: 2em;
     background-color: inherit; }
   .tragos__text {
-    color: #ffffff;
+    color: #FFFFFF;
     font-size: 1.6em;
-    background-color: #231f20; }
+    background-color: #231F20; }
 
 .lead {
   text-align: center;
@@ -213,7 +216,7 @@ nav ul {
 
 .h2 {
   text-align: center;
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 5.2em;
   margin-bottom: 2.4rem; }
 
@@ -227,8 +230,9 @@ nav ul {
 video {
   width: 100%;
   height: 100%;
-  margin-bottom: 2.4rem; }
-  video__title {
+  margin-bottom: 2.4rem;
+  position: relative; }
+  video__title h1 {
     width: 100%;
     height: 100%;
     top: 200px;
@@ -250,27 +254,31 @@ video {
     gap: 1rem;
     flex: 1 1 30%;
     transition: all .3s linear; }
-  .cards__info {
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    background-color: #231f20; }
-  .cards__title {
-    font-family: "Belgrano", serif;
-    color: #e41a1a;
-    font-size: 2em;
-    background-color: inherit; }
-  .cards__text {
-    color: #ffffff;
-    font-size: 1.6em;
-    background-color: #231f20; }
-  .cards__img {
-    overflow: hidden; }
-  .cards__img img {
-    transition: all 1.3s ease; }
-  .cards__img:hover img {
-    transform: scale(1.1); }
+    .cards .box__info {
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 2.4rem;
+      background-color: #231F20; }
+    .cards .box__title, .cards .box .box__title--active {
+      color: #E41A1A;
+      font-size: 2em;
+      background-color: inherit; }
+    .cards .box__text {
+      color: #FFFFFF;
+      font-size: 1.6em;
+      background-color: #231F20; }
+    .cards .box__img {
+      overflow: hidden; }
+    .cards .box__img img {
+      transition: all 1.3s ease; }
+    .cards .box .box__img:hover img {
+      transform: scale(1.1); }
+
+.cards .box .box__title--active {
+  font-style: "Belgrano", serif; }
 
 /*INFO*/
 .info {
@@ -287,18 +295,21 @@ video {
     padding: 6rem; }
   .info__title {
     font-size: 5.2em;
-    color: #ffffff;
+    color: #FFFFFF;
     font-family: "Belgrano", serif; }
   .info__text {
     font-size: 1.6em;
     font-weight: 300;
-    color: #ffffff; }
+    color: #FFFFFF; }
   .info__link {
     display: flex;
     align-items: center;
     font-size: 1.4em;
     background-color: #037971;
-    color: #231f20; }
+    color: #231F20; }
+    .info__link path {
+      color: #037971;
+      stroke-width: 5px; }
 
 /*GALLERY*/
 .gallery {

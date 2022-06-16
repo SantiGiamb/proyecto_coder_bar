@@ -2,12 +2,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #231f20;
+    background-color: map-get($colors, primary);
     padding: $spacing-xsmall 0;
   
    picture {
     flex-basis: 40%;
-    background-color: $primary;
+    background-color: map-get($colors, primary);
     margin: 0;
   }
    img {
@@ -28,8 +28,10 @@ nav {
                 transition: all 0.3s ease 0s;
             }
         }
-  nav ul li a:hover {
-    color:$secondary;
-  }
+    
+ 
       }
+}
+nav ul li a:hover {
+  color:map-get($colors, secondary);;
 }
