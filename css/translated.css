@@ -226,21 +226,53 @@ nav ul li a:hover {
 .col {
   margin: 2rem; }
 
+.cont__title {
+  color: #FFFFFF;
+  font-size: 2.4em;
+  margin-left: 2.4rem;
+  margin-bottom: 2.4rem;
+  font-style: var(--font-title); }
+
+.cont__text {
+  color: #FFFFFF;
+  font-size: 1.4em;
+  font-style: "Libre Baskerville", serif;
+  padding: 2.4rem; }
+
+.cont__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2.4rem;
+  margin-inline: 3em;
+  justify-content: center; }
+
+.cont__img:nth-last-of-type(3) {
+  grid-column: 1/4; }
+
+.cont__img:nth-last-of-type(2) {
+  grid-row: 1;
+  grid-column: 4/6; }
+
+.cont__img:nth-last-of-type(1) {
+  grid-column: 1/6; }
+
 /*VIDEO*/
 video {
   width: 100%;
   height: 100%;
-  margin-bottom: 2.4rem;
+  margin-bottom: var(--spacing-small);
   position: relative; }
-  video__title h1 {
-    width: 100%;
-    height: 100%;
-    top: 200px;
-    position: absolute;
-    margin-left: 3rem; }
-  video__title h2 {
-    margin-top: 2.4rem;
-    margin-left: 2.4rem; }
+
+.video__title {
+  width: 100%;
+  height: 100%;
+  top: 200px;
+  position: absolute;
+  margin-left: var(--spacing-medium); }
+  .video__title__title h2 {
+    margin-top: var(--spacing-small);
+    margin-left: var(--spacing-small); }
 
 .cards {
   display: flex;
@@ -261,6 +293,9 @@ video {
       justify-content: flex-start;
       align-items: flex-start;
       gap: 2.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
       background-color: #231F20; }
     .cards .box__title, .cards .box .box__title--active {
       color: #E41A1A;
@@ -317,7 +352,8 @@ video {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 2rem;
-  margin-inline: 3em; }
+  margin-inline: 3em;
+  justify-content: center; }
   .gallery__img:nth-last-of-type(6) {
     grid-column: 1 / 7; }
   .gallery__img:nth-last-of-type(5) {
