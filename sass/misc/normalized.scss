@@ -1,0 +1,43 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: $font-principal;
+    background-color: map-get($colors, secondary);
+  }
+  
+  a {
+    text-decoration: none;
+    font-family: $font-principal;
+    color: map-get($colors, text-color);
+    font-family: $font-principal;
+    font-weight: 400;
+  }
+  ul {
+    list-style-type: none;
+    background-color: #231f20;
+  }
+  img {
+    width: 100%;
+  }
+  main {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-top: $spacing-medium;
+  }
+  h1 {
+    font-size: $text-large;
+    font-family: $font-title;
+    color: map-get($colors, text-color);
+  }
+  h2 {
+    font-size: $text-medium;
+    color: map-get($colors, text-color);
+    
+  }

@@ -1,0 +1,37 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: map-get($colors, primary);
+    padding: $spacing-xsmall 0;
+  
+   picture {
+    flex-basis: 40%;
+    background-color: map-get($colors, primary);
+    margin: 0;
+  }
+   img {
+    max-width: 150px;
+    cursor: pointer;
+  }
+}
+ 
+nav {
+    ul {
+    flex-basis: 40%;
+    display: flex;
+    gap: $spacing-small;
+        li{
+
+            a {
+                font-size: $text-base;
+                transition: all 0.3s ease 0s;
+            }
+        }
+    
+ 
+      }
+}
+nav ul li a:hover {
+  color:map-get($colors, secondary);;
+}

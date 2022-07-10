@@ -1,0 +1,22 @@
+/*MISC*/
+@import './misc/variables.scss';
+@import './misc/mixins.scss';
+@import './misc/normalized.scss';
+@import './misc/animations.scss';
+@import './misc/mediaqueries.scss';
+
+/*PARTIALS*/ 
+@import './partials/footer.scss';
+@import './partials/header.scss';
+
+/*VIEWS*/
+@import './views/booking.scss';
+@import './views/classics.scss';
+@import './views/evenfun.scss';
+@import './views/home.scss';
+@import './views/us.scss';     
+
+/*EXTERNOS*/ 
+@import url('https://fonts.googleapis.com/css2?family=Belgrano&family=Libre+Baskerville&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Belgrano&family=Libre+Baskerville&display=swap');

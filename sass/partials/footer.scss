@@ -1,0 +1,25 @@
+.footer-container {
+    background-color: map-get($colors, primary);
+    padding: 0%;
+    width: 100%;
+    color: #037971;
+    display: flex;
+    justify-content: space-around;
+  
+      h3  {
+        margin-bottom: $spacing-xsmall;
+        margin-top: $spacing-xsmall;
+      }
+        
+      h4 {
+        margin-bottom: $spacing-xsmall;
+        margin-top: $spacing-xsmall;
+      }
+      &-column a {
+        text-decoration: none;
+        color: map-get($colors, text-color);
+        display: flex;
+        background-color: map-get($colors, primary);
+      }
+}
+  
